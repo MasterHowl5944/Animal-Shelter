@@ -9,6 +9,20 @@ public class Animal {
     private double weight;
     private double height;
     public Animal() {}
+    public double growHeight(double heightGrowthRate) {
+        if (heightGrowthRate > 0) {
+            this.height += heightGrowthRate;
+            return this.height;
+        }
+        return 0;
+    }
+    public double growWeight(double weightGrowthRate) {
+        if (weightGrowthRate > 0) {
+            this.weight += weightGrowthRate;
+            return this.weight;
+        }
+        return 0;
+    }
     public Animal(int numberOfLegs, int numberOfEyes, String color,
                   String name, boolean laysEggs, Diet diet,
                   AnimalType animalType, double height, double weight) {
