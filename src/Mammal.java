@@ -12,7 +12,6 @@ public class Mammal extends Animal {
         super(numberOfLegs, numberOfEyes, name, diet, animalType, height, weight, lifespan);
         this.furColor = furColor;
         this.laysEggs = laysEggs;
-        this.communication = communication;
     }
     public Mammal () {
     }
@@ -37,7 +36,7 @@ public class Mammal extends Animal {
         this.communication = communication;
     }
 
-    // Methods
+    //Method
     public void communicationMethod() {
         System.out.println("Mammal: " + super.getName() + " communicates with " + this.communication);
     }

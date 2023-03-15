@@ -31,6 +31,6 @@ public class Fish extends Animal {
 
     // Methods
     public void moves() {
-        System.out.println("Fish :" + super.getName() + " moves");
+        System.out.println("Fish :" + super.getName() + " lives in " + this.waterType + " water.");
     }
 }
