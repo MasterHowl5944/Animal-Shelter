@@ -3,8 +3,6 @@ public class Snake extends Reptile {
     private boolean canSwim;
 
     // Constructors
-    public Snake() {
-    }
     public Snake(int numberOfLegs, int numberOfEyes, String name, Diet diet, AnimalType animalType,
                  double height, double weight, int lifespan, String skinColor, String locomotion,
                  String species, boolean canSwim) {
@@ -29,11 +27,11 @@ public class Snake extends Reptile {
 
     //Method
     public void swims() {
-        if (canSwim) {
-            System.out.println("This " + this.species + " can swim!");
+        if (canSwim = true) {
+            System.out.println("This " + getSpecies() + " can swim!");
         }
         else {
-            System.out.println("This " + this.species + " cannot swim.");
+            System.out.println("This " + getSpecies() + " cannot swim.");
         }
     }
 }

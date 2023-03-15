@@ -4,8 +4,6 @@ public class Fish extends Animal {
     private String waterType;
 
     // Constructors
-    public Fish() {
-    }
     public Fish(int numberOfLegs, int numberOfEyes,
                 String name, Diet diet, AnimalType animalType,
                 double height, double weight, int lifespan,
@@ -31,6 +29,6 @@ public class Fish extends Animal {
 
     // Methods
     public void moves() {
-        System.out.println("Fish :" + super.getName() + " lives in " + this.waterType + " water.");
+        System.out.println("Fish: " + super.getName() + " lives in " + getWaterType() + " water.");
     }
 }

@@ -8,8 +8,6 @@ public class Dog extends Mammal {
         super(numberOfLegs, numberOfEyes, name, diet, animalType, height, weight, lifespan, furColor, laysEggs, communication);
         this.breed = breed;
     }
-    public Dog() {
-    }
 
     //Getters and Setters
     public String getBreed() {
@@ -21,6 +19,6 @@ public class Dog extends Mammal {
 
     // Methods
     public void species() {
-        System.out.println("This " + super.getName() + " is a " + this.breed);
+        System.out.println("This " + super.getName() + " is a " + getBreed());
     }
 }

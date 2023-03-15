@@ -4,8 +4,6 @@ public class Bird extends Animal{
     private int numberOfEggs;
 
     // Constructor
-    public Bird() {
-    }
     public Bird(int numberOfLegs, int numberOfEyes,
                 String name, Diet diet, AnimalType animalType,
                 double height, double weight, int lifespan,

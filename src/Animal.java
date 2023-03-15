@@ -24,8 +24,8 @@ public class Animal {
         }
         return 0;
     }
+
     // Class constructors
-    public Animal() {}
     public Animal(int numberOfLegs, int numberOfEyes,
                   String name, Diet diet, AnimalType animalType,
                   double height, double weight, int lifespan) {

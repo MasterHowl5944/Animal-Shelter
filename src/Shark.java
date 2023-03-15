@@ -3,8 +3,6 @@ public class Shark extends Fish{
     private String skeleton;
 
     //Constructors
-    public Shark() {
-    }
     public Shark(int numberOfLegs, int numberOfEyes, String name, Diet diet, AnimalType animalType,
                  double height, double weight, int lifespan, String scaleColor, String waterType,
                  String skeleton) {
@@ -22,6 +20,6 @@ public class Shark extends Fish{
 
     //Method
     public void sharkSkeleton() {
-        System.out.println("This shark has a " + this.skeleton + " skeleton.");
+        System.out.println("This shark has a " + getSkeleton() + " skeleton.");
     }
 }

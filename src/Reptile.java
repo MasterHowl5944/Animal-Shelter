@@ -4,8 +4,6 @@ public class Reptile extends Animal {
     private String locomotion;
 
     // Constructors
-    public Reptile () {
-    }
     public Reptile (int numberOfLegs, int numberOfEyes,
                     String name, Diet diet, AnimalType animalType,
                     double height, double weight, int lifespan,
@@ -31,6 +29,6 @@ public class Reptile extends Animal {
 
     // Methods
     public void moves() {
-        System.out.println("Reptile: " + super.getName() + " " + this.locomotion + "'s to move.");
+        System.out.println("Reptile: " + super.getName() + " " + getLocomotion() + "'s to move.");
     }
 }

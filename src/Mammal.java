@@ -12,8 +12,7 @@ public class Mammal extends Animal {
         super(numberOfLegs, numberOfEyes, name, diet, animalType, height, weight, lifespan);
         this.furColor = furColor;
         this.laysEggs = laysEggs;
-    }
-    public Mammal () {
+        this.communication = communication;
     }
 
     // Getters and Setters
@@ -38,6 +37,6 @@ public class Mammal extends Animal {
 
     //Method
     public void communicationMethod() {
-        System.out.println("Mammal: " + super.getName() + " communicates with " + this.communication);
+        System.out.println("Mammal: " + super.getName() + " communicates with " + getCommunication() + "s.");
     }
 }

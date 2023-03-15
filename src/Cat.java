@@ -7,12 +7,18 @@ public class Cat extends Mammal{
                String breed) {
         super(numberOfLegs, numberOfEyes, name, diet, animalType, height, weight, lifespan, furColor, laysEggs, communication);
         this.breed = breed;
-
     }
-    public Cat() {};
+
+    //Getters and Setters
+    public String getBreed() {
+        return breed;
+    }
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
 
     //Method
     public void purrs() {
-        System.out.println("The " + this.breed + " purrs.");
+        System.out.println("The " + getBreed() + " purrs.");
     }
 }
